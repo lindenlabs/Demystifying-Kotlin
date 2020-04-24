@@ -15,6 +15,7 @@
 - [Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - [List of Java keywords (reserved words)](https://en.wikipedia.org/wiki/List_of_Java_keywords)
 - [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- [Kotlin style guide](https://kotlinlang.org/docs/reference/coding-conventions.html)
 
 ### Programming Environment
 - [Java Repl](https://repl.it/languages/java)
@@ -27,10 +28,10 @@
 |virtual|the opposite of physical|
 |virtual machine|a computer that doesn't exist as physical hardware, instead it is "emulated" by software|
 |platform|environment in which a piece of software is executed.|
-|interopable|of computer systems or software) able to exchange and make use of information.|
+|interopable|(of computer systems or software) able to exchange and make use of information.|
 
 
-# Lecture
+# Workshop
 
 Welcome! 🌻
 
@@ -85,8 +86,6 @@ In 2017, Google announced support for Kotlin in its Android Studio IDE. On 7 May
 Kotlin is designed with Java Interoperability in mind. Existing Java code can be called from Kotlin in a natural way, and Kotlin code can be used from Java.
 
 ### Exercises
-
-1. [Command Line Java](command-line-java.md) (*We'll do this first one together*)
 
 ### Java Output
 
@@ -149,7 +148,7 @@ val myAge: Byte = 28
 
 * **double** - a real number, double-precision 64-bit floating point. In most cases this is the default type used to represent decimal values.
 
-```kotlin
+```
 val percentOfPizza: Float = 33.3
 val pi: Double = 3.14159265359
 ```
@@ -167,7 +166,7 @@ String hello = "Hello, " + "world!";
 
 ### Naming & assigning variables
 
-Java is a **strongly-typed** language, meaning variables are of an explicit type when they are assigned. Use `=` to assign a value to a variable.
+Both Java and Kotlin are **strongly-typed** language, meaning variables are of an explicit type when they are assigned. Use `=` to assign a value to a variable.
 
 ```java
 String myName = "Ramona";
@@ -190,10 +189,11 @@ val favoriteColor: String
 val tacoCount: Int;
 
 val isNewUser:;
+```
 
 
-// What about these?
-
+ What about these?
+```kotlin
 val thisVariableIsEqualToTwentyThreePointFive: Double = 23.5d
 
 val LOL: Boolean
@@ -211,7 +211,6 @@ See the Kotlin Style Guide [section on naming conventions](https://kotlinlang.or
 We can use Java to perform basic arithmetic. The order of operations is just like standard arithmetic: parentheses, exponents, multiplication and division, addition and subtraction (PEMDAS).
 
 ```kotlin
-
 // Addition
 var result: Int = 4 + 5
 
