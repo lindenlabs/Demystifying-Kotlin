@@ -6,7 +6,7 @@
 - Print output to the console.
 
 ## Resources
-
+- https://en.wikipedia.org/wiki/Kotlin_(programming_language)
 
 ### Documentation
 - [Java History](http://papa.det.uvigo.es/~theiere/cursos/Curso_Java/history.html)
@@ -17,8 +17,8 @@
 - [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
 ### Programming Environment
-- [repl.it](https://repl.it/languages/java)
-- [repl.it](https://repl.it/languages/kotlin)
+- [Java Repl](https://repl.it/languages/java)
+- [Kotlin Repl](https://repl.it/languages/kotlin)
 
 ## Vocabulary
 |Term|Definition|
@@ -27,8 +27,8 @@
 |virtual|the opposite of physical|
 |virtual machine|a computer that doesn't exist as physical hardware, instead it is "emulated" by software|
 |platform|environment in which a piece of software is executed.|
+|interopable|of computer systems or software) able to exchange and make use of information.|
 
- 
 
 # Lecture
 
@@ -62,11 +62,11 @@ How are the programs we write interpreted and carried out by computers?
 
 Java is a programming language and computing platform that was released by Sun Microsystems (now Oracle) in 1995.
 
-Java is the primary programming language used to develop Android apps.
+Java has long been the primary programming language used to develop Android apps.
 
 Java was created to solve a problem: it was the first programming language in which programs could be written to run anywhere, regardless of operating system or microprocessor.
 
-In Java, source code is written in plain text files ending with a `.java` extension. 
+In Java, source code is written in plain text files ending with a `.java` extension.
 
 These files are then compiled by the **javac** compiler into `.class` files containing Java **bytecode** -- the machine language of the Java Virtual Machine. The **java** tool then runs your program with an instance of the JVM tailored to your machine.
 
@@ -74,10 +74,15 @@ These files are then compiled by the **javac** compiler into `.class` files cont
 
 ### What is Kotlin?
 
-Kotlin is a programming language and computing platfrom released by JetBrains (the same folks who created IntelliJ and Android Studio) in 2011. 
+Kotlin is a programming language and computing platform released by JetBrains (the same folks who created IntelliJ and Android Studio) in 2011.
 
 From Wikipedia: Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of its standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
 
+In Kotlin, source code is written in plain text files ending with a `.kt` extension.
+
+In 2017, Google announced support for Kotlin in its Android Studio IDE. On 7 May 2019, Google announced that the Kotlin programming language is now its preferred language for Android app developers.
+
+Kotlin is designed with Java Interoperability in mind. Existing Java code can be called from Kotlin in a natural way, and Kotlin code can be used from Java.
 
 ### Exercises
 
@@ -103,11 +108,11 @@ Go to [repl.it](https://repl.it/languages/kotlin) and try the same
 
 ### Variables & data types
 
-In programming, **variables** are kinds of values that can be stored and manipulated. 
+In programming, **variables** are kinds of values that can be stored and manipulated.
 
 A variable's **data type** determines the values it may contain and the operations that may be performed on it. A **primitive data type** is a name for data types that are provided by the language as a basic building block. There are eight primitive data types in Java:
 
-* **boolean** - represents a truth and has only two possible values, `true` or `false`. A boolean can be inverted with the `!` operator. Booleans can also be created by comparing two variables. 
+* **boolean** - represents a truth and has only two possible values, `true` or `false`. A boolean can be inverted with the `!` operator. Booleans can also be created by comparing two variables.
 
 ```java
 boolean isCar = true;
@@ -125,7 +130,7 @@ val answer: Boolean = 7 > 3
 
 * **short** - a small integer between -32,768 and 32,767.
 
-* **int** - an integer between -2<sup>31</sup> and 2<sup>31</sup>-1. In most cases this is the default type used to represent integer values. 
+* **int** - an integer between -2<sup>31</sup> and 2<sup>31</sup>-1. In most cases this is the default type used to represent integer values.
 
 * **long** - an integer  between -2<sup>63</sup> and 2<sup>63</sup>-1.
 
@@ -142,7 +147,7 @@ val myAge: Byte = 28
 
 * **float** - a real number, single-precision 32-bit floating point. For our uses, **real numbers** are just numbers that can have decimals in them. For example, 2 is an integer but 2.1 is a real number.
 
-* **double** - a real number, double-precision 64-bit floating point. In most cases this is the default type used to represent decimal values. 
+* **double** - a real number, double-precision 64-bit floating point. In most cases this is the default type used to represent decimal values.
 
 ```kotlin
 val percentOfPizza: Float = 33.3
